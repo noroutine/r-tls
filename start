@@ -1,0 +1,7 @@
+#!/bin/bash -eux
+
+export CURL_CA_BUNDLE=./cacerts.pem
+export SSL_CERT_FILE=./cacerts.pem
+export REQUESTS_CA_BUNDLE=./cacerts.pem
+
+exec "$@"
